@@ -1,4 +1,8 @@
 // <reference path="_all.ts" />
 
-let x: number = 12;
+// module is a typescript keywork which will create an es5 IIFE (for scoping)
+module ContactManagerApp {
+  angular.module("contactManagerApp", ["ngMaterial"])
+    // .controller("MainController", MainController);
+}
 

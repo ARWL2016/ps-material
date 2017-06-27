@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en" ng-app="contactManagerApp"> 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +10,22 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" />
     <link href="lib/css/angular-material.min.css" rel="stylesheet" />
     <link href="./assets/app.css" rel="stylesheet">
+
+    <style type="text/css">
+      [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak {
+        display: none !important; 
+      }
+    </style>
   </head>
 
-  <body>
+  <body ng-controller="MainController">
     <h1> Hello World </h1>
+    {{ message }}
     <script src="lib/js/angular.min.js"></script>
     <script src="lib/js/angular-animate.min.js"></script>
     <script src="lib/js/angular-aria.min.js"></script>
     <script src="lib/js/angular-material.min.js"></script>
+    <script src="./dist/boot.js"></script>
+    <script src="./dist/controllers/mainController.js"></script>
   </body>
 </html>
